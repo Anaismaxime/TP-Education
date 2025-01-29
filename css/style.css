@@ -1,0 +1,277 @@
+:root {
+    --lightblack-color: #42434B;
+    --darkblack-color: black;
+    --light-color: #fff;
+    --primary-color: #FE7EC9;
+    --secondary-color: #488DF4;
+    --tertiary-color: #FECA02;
+}
+
+body {
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+header {
+    background-color: var(--light-color);
+    margin: 0 40px;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+            display: none;
+        }
+
+        a {
+            margin: 0;
+            text-decoration: none;
+            width: 110px;
+            font-weight: 700;
+            font-size: 24px;
+            color: var(--primary-color);
+        }
+
+        .burger-icon {
+            margin: 0;
+
+            span {
+                display: block;
+                width: 30px;
+                height: 4px;
+                background-color: var(--darkblack-color);
+                padding: 0;
+                margin: 5px;
+            }
+        }
+    }
+
+    h1 {
+        text-transform: uppercase;
+        margin: 30px auto;
+        text-align: center;
+        font-weight: 700;
+        font-size: 36px;
+        color: var(--secondary-color);
+        width: 302px;
+        height: 159px;
+
+    }
+
+    p {
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+        color: var(--lightblack-color);
+        height: 44px;
+
+    }
+
+
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 100%;
+        aspect-ratio: 1 /1;
+        object-fit: cover;
+    }
+}
+
+.first {
+    margin: 0;
+
+    .icon {
+        display: block;
+        margin: auto;
+        padding-top: 56px;
+        padding-bottom: 10px;
+
+    }
+
+    article {
+        padding-bottom: 40px;
+    }
+
+    .apprentissage {
+        background-color: #38C4C1;
+
+        .title1 {
+            margin: 0;
+            color: var(--lightblack-color);
+            font-size: 700;
+            font-size: 36px;
+            text-align: center;
+        }
+    }
+
+    .philosophie {
+        background-color: var(--tertiary-color);
+
+        .title2 {
+            margin: 0;
+            color: var(--light-color);
+            font-size: 700;
+            font-size: 36px;
+            text-align: center;
+        }
+    }
+
+    .pratique {
+        background-color: var(--primary-color);
+
+        .title3 {
+            margin: 0;
+            color: var(--lightblack-color);
+            font-size: 700;
+            font-size: 36px;
+            text-align: center;
+        }
+    }
+
+    .jeux {
+        background-color: var(--secondary-color);
+
+        .title4 {
+            margin: 0;
+            color: var(--lightblack-color);
+            font-size: 700;
+            font-size: 36px;
+            text-align: center;
+        }
+    }
+}
+
+.second {
+    margin: 0 40px;
+
+    h2 {
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+        color: var(--lightblack-color)
+    }
+
+    .uppercase {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 24px;
+        text-align: center;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .uppercase-link {
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .image-containerbis {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .one {
+        background-color: rgba(56, 196, 194, 0.24);
+        margin: 15px 0;
+        padding: 5px;
+        img {
+            display: block;
+            margin: auto;
+            padding-top: 25px;
+            margin-bottom:15px;
+        }
+
+        h3 {
+            margin: 0;
+
+            a {
+                color: black;
+                text-decoration: none;
+            }
+        }
+
+        a {
+            color: #38C4C1;
+            padding-bottom: 20px;
+            text-decoration: none;
+          
+        }
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            text-align: center;
+         
+        }
+
+
+    }
+
+    .two {
+        background-color: rgba(254, 126, 201, 0.24);
+        margin: 15px 0;
+        padding: 5px;
+
+        img {
+            display: block;
+            margin: auto;
+            padding-top: 25px;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            margin: 0;
+
+            a {
+                color: black;
+                text-decoration: none;
+            }
+        }
+        
+        a {
+            color: var(--primary-color);
+            padding-bottom: 20px;
+            text-decoration: none;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            text-align: center;
+        }
+
+    }
+
+}
+
+.end{
+    margin: 15px 0;
+}
+
+footer{
+    background-color: #333333;
+    padding:40px;
+    a{
+        display: block;
+        color: white;
+        text-align: center;
+        font-family: "Kumbh Sans", serif;
+        font-weight:400;
+        font-size: 12px;
+        text-decoration: none;
+    }
+}
