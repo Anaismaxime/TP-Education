@@ -12,43 +12,84 @@ body {
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
+    position: relative;
 }
 
 header {
     background-color: var(--light-color);
-    margin: 0 40px;
+    margin:0 40px;
+    display: flex;
+    justify-content: space-between;
 
-    nav {
-        display: flex;
-        justify-content: space-between;
+    .logo {
+        color: var(--primary-color);
+        font-weight: 700;
+        font-size: 24px;
+        text-decoration: none;
+        text-transform: uppercase
+    }
 
-        ul {
-            display: none;
-        }
+    .burger-icon {
+        all: unset;
 
-        a {
-            margin: 0;
-            text-decoration: none;
-            width: 110px;
-            font-weight: 700;
-            font-size: 24px;
-            color: var(--primary-color);
-        }
-
-        .burger-icon {
-            margin: 0;
-
-            span {
-                display: block;
-                width: 30px;
-                height: 4px;
-                background-color: var(--darkblack-color);
-                padding: 0;
-                margin: 5px;
-            }
+        span {
+            display: block;
+            width: 30px;
+            height: 4px;
+            background-color: var(--darkblack-color);
+            margin: 5px;
         }
     }
 
+
+    nav {
+        display: none;
+        .open {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 30vh;
+            position: fixed;
+            background-color: #333333;
+            display: flex;
+            flex-direction: column;
+        
+            button {
+                all: unset;
+                color: var(--light-color);
+                font-size: 25px;
+                align-self: flex-end;
+                margin: 0 20px;
+            }
+
+            ul {
+                padding: 0;
+                margin: 20px;
+
+                li {
+                    margin: auto;
+                    list-style: none;
+                    text-align: center;
+                    padding: 5px;
+
+                    a {
+                        font-family: "Kumbh Sans", serif;
+                        font-weight: 400;
+                        font-size: 20px;
+                        color: var(--light-color);
+                        text-decoration: none;
+
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.hero {
     h1 {
         text-transform: uppercase;
         margin: 30px auto;
@@ -58,7 +99,6 @@ header {
         color: var(--secondary-color);
         width: 302px;
         height: 159px;
-
     }
 
     p {
@@ -67,10 +107,7 @@ header {
         text-align: center;
         color: var(--lightblack-color);
         height: 44px;
-
     }
-
-
 }
 
 .image-container {
@@ -189,11 +226,12 @@ header {
         background-color: rgba(56, 196, 194, 0.24);
         margin: 15px 0;
         padding: 5px;
+
         img {
             display: block;
             margin: auto;
             padding-top: 25px;
-            margin-bottom:15px;
+            margin-bottom: 15px;
         }
 
         h3 {
@@ -209,16 +247,13 @@ header {
             color: #38C4C1;
             padding-bottom: 20px;
             text-decoration: none;
-          
         }
+
         p {
             font-weight: 400;
             font-size: 14px;
             text-align: center;
-         
         }
-
-
     }
 
     .two {
@@ -241,7 +276,7 @@ header {
                 text-decoration: none;
             }
         }
-        
+
         a {
             color: var(--primary-color);
             padding-bottom: 20px;
@@ -253,25 +288,72 @@ header {
             font-size: 14px;
             text-align: center;
         }
-
     }
-
 }
 
-.end{
+.end {
     margin: 15px 0;
 }
 
-footer{
+footer {
     background-color: #333333;
-    padding:40px;
-    a{
+    padding: 40px;
+
+    a {
         display: block;
         color: white;
         text-align: center;
         font-family: "Kumbh Sans", serif;
-        font-weight:400;
+        font-weight: 400;
         font-size: 12px;
         text-decoration: none;
     }
 }
+
+
+@media (min-width: 768px){
+
+   .hero{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   }
+
+    .first{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .third{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .end{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        
+    }
+}
+
+@media (min-width: 1028px){
+
+   header, .hero{
+    margin: 20px 100px;
+   }
+   
+
+    .first{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 20px 0;
+    }
+
+    .image-containerbis, .thrid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    
+    }
+}
+   

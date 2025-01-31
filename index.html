@@ -20,27 +20,33 @@
 
 <body>
     <header>
-        <nav>
-            <a href="#">EDUCATION</a>
+        <a href="#" class="logo">Education</a>
+        <button class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="open">
+            <button class="close-btn">x</button>
             <ul>
                 <li><a href="#">Accueil</a></li>
                 <li><a href="#">À propos</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-            <div class="burger-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </nav>
-
-        <h1>Qui a dit que l'école était ennuyeuse ?</h1>
-        <p>On joue et on apprend</p>
-        <div class="image-container">
-            <img src="images/image1.jpeg" alt="photo d'un enfant à l'école">
-        </div>
     </header>
     <main>
+        <section class="hero">
+            <div class="bla">
+                <h1>Qui a dit que l'école était ennuyeuse ?</h1>
+                <p>On joue et on apprend</p>
+            </div>
+            <div class="image-container">
+                <img src="images/image1.jpeg" alt="photo d'un enfant à l'école">
+            </div>
+        </section>
+
         <section class="first">
             <article class="apprentissage">
                 <img src="icones/Book.png" alt="icone de livre" class="icon">
@@ -61,38 +67,43 @@
         </section>
 
         <section class="second">
+
             <p class="uppercase">A propos</p>
             <h2>Meilleure école primaire</h2>
             <div class="image-containerbis">
                 <img src="images/image2.jpeg" alt="enfant qui ouvre un oeil avec sa main">
             </div>
-            <article class="one">
-                <img src="frames/Frame 1.png" alt="Icone ronde de deux personnes">
-                <h3 class="uppercase"><a href="#">ENSEIGNANTS</a></h3>
-                <p>Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis
-                    suscipit
-                    ultrices.
-                </p>
-                <p class="uppercase-link"><a href="#">EN SAVOIR PLUS</a></p>
-            </article>
-            <article class="two">
-                <img src="frames/Frame 2.png" alt="Icone de diamant blanc fond rose">
-                <h3 class="uppercase"><a href="#">NOTRE MISSION</a></h3>
-                <p>Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis
-                    suscipit
-                    ultrices.
-                </p>
-                <p class="uppercase-link"><a href="#">EN SAVOIR PLUS</a></p>
-            </article>
 
+            <section class="third">
+                <article class="one">
+                    <img src="frames/Frame 1.png" alt="Icone ronde de deux personnes">
+                    <h3 class="uppercase"><a href="#">ENSEIGNANTS</a></h3>
+                    <p>Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis
+                        suscipit
+                        ultrices.
+                    </p>
+                    <p class="uppercase-link"><a href="#">EN SAVOIR PLUS</a></p>
+                </article>
+                <article class="two">
+                    <img src="frames/Frame 2.png" alt="Icone de diamant blanc fond rose">
+                    <h3 class="uppercase"><a href="#">NOTRE MISSION</a></h3>
+                    <p>Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis
+                        suscipit
+                        ultrices.
+                    </p>
+                    <p class="uppercase-link"><a href="#">EN SAVOIR PLUS</a></p>
+                </article>
+            </section>
 
-            <div class="image-container end">
-                <img src="images/image3.jpeg" alt="Petite fille en caouet">
-            </div>
-            <div class="image-container end">
-                <img src="images/image4.jpeg" alt="Petit garçon blond">
-            </div>
-        </section>
+            <section class="end">
+                <div class="image-container">
+                    <img src="images/image3.jpeg" alt="Petite fille en caouet">
+                </div>
+                <div class="image-container">
+                    <img src="images/image4.jpeg" alt="Petit garçon blond">
+                </div>
+            </section>
+
     </main>
 
     <footer>
